@@ -1,4 +1,4 @@
-package mtraton.JavaSolutions;
+package mtraton.solutions;
 
 public class TheClockwiseSpiral {
 

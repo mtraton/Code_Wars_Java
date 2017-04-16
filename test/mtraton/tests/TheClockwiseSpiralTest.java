@@ -1,6 +1,6 @@
-package mtraton.JavaTests;
+package mtraton.tests;
 
-import mtraton.JavaSolutions.TheClockwiseSpiral;
+import mtraton.solutions.TheClockwiseSpiral;
 import org.junit.Assert;
 import org.junit.Test;
 
