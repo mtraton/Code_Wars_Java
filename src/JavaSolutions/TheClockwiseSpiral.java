@@ -1,10 +1,12 @@
+package JavaSolutions;
+
 public class TheClockwiseSpiral {
 
-    public static class Position
+    private static class Position
     {
-        int row = 0;
-        int col = 0;
-        int val = 1;
+        private int row = 0;
+        private int col = 0;
+        private int val = 1;
     }
 
     public static int[][] createSpiral(int N) {
@@ -29,7 +31,7 @@ public class TheClockwiseSpiral {
         return array;
     }
 
-    public static void right (int[][] array, Position position)
+    private static void right (int[][] array, Position position)
     {
         int row = position.row;
         int col = position.col;
@@ -54,12 +56,11 @@ public class TheClockwiseSpiral {
     }
 
 
-    public static void left (int[][] array, Position position)
+    private static void left (int[][] array, Position position)
     {
         int row = position.row;
         int col = position.col;
         int val = position.val;
-        int N = array.length;
 
         while (col >= 0)
         {
@@ -78,7 +79,7 @@ public class TheClockwiseSpiral {
 
     }
 
-    public static void down (int[][] array, Position position)
+    private static void down (int[][] array, Position position)
     {
         int row = position.row;
         int col = position.col;
@@ -103,7 +104,7 @@ public class TheClockwiseSpiral {
         position.val = val;
     }
 
-    public static void up (int[][] array, Position position)
+    private static void up (int[][] array, Position position)
     {
         int row = position.row;
         int col = position.col;
