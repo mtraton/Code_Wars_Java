@@ -9,6 +9,37 @@ public class TheClockwiseSpiral {
         private int val = 1;
     }
 
+    public static int[][] test(int N) {
+        int[][] result = new int[N][N];
+        int counter = 1;
+        int total = N * N;
+        int rowLimit = N;
+        int columnLimit = N;
+        int row = 0, column = 0;
+        while (counter <= total) {
+            for (int i = column; i < columnLimit; i++) {
+                result[row][i] = counter++;
+            }
+            for (int i = row+1; i < rowLimit; i++) {
+                result[i][columnLimit-1] = counter++;
+            }
+            for (int i = columnLimit-2; i >= column; i--) {
+                result[rowLimit-1][i] = counter++;
+            }
+            for (int i = rowLimit-2; i > row; i--) {
+                result[i][column] = counter++;
+            }
+            row++;
+            column++;
+            rowLimit--;
+            columnLimit--;
+        }
+        return result;
+    }
+
+
+
+
     public static int[][] createSpiral(int N) {
 
         Position position = new Position();
