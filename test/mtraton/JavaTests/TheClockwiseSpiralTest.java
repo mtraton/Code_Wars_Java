@@ -1,6 +1,6 @@
-package JavaTests;
+package mtraton.JavaTests;
 
-import JavaSolutions.TheClockwiseSpiral;
+import mtraton.JavaSolutions.TheClockwiseSpiral;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,12 +32,13 @@ public class TheClockwiseSpiralTest {
         Assert.assertArrayEquals(expected, TheClockwiseSpiral.createSpiral(3));
 
     }
-
+    /*
     @Test
     public void maxSize() {
         // TODO: Add testcase that checks maximal size that does not trigger memory exceptions
        TheClockwiseSpiral.createSpiral(10000);
     }
+    */
 
 
 }

@@ -1,4 +1,4 @@
-package JavaSolutions;
+package mtraton.JavaSolutions;
 
 public class TheClockwiseSpiral {
 
@@ -8,7 +8,7 @@ public class TheClockwiseSpiral {
         private int col = 0;
         private int val = 1;
     }
-    
+
     public static int[][] createSpiral(int N) {
 
         Position position = new Position();
@@ -110,7 +110,6 @@ public class TheClockwiseSpiral {
         int col = position.col;
         int val = position.val;
 
-        int N = array.length;
         while (row >= 0)
         {
             int current = array[row][col];
